@@ -40,6 +40,9 @@ jobs:
             ${{ runner.os }}-gradle-
 
       # Step 4: 테스트 실행 (CI의 핵심!)
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+
       - name: Run tests
         run: ./gradlew test
 
