@@ -1,0 +1,33 @@
+# application-test.yml
+
+# 1. AWS 파라미터 스토어 기능을 완전히 끕니다. (가장 중요!)
+spring:
+  config:
+    activate:
+      on-profile: test
+    # prod에 있는 import 설정을 여기서 빈 값으로 덮어써서 무시하게 합니다.
+    import: ""
+
+  # 2. prod에서 사용하는 변수들을 가짜값으로 채워줍니다. (Placeholder 에러 방지)
+  cloud:
+    aws:
+      s3:
+        bucket: test-bucket
+
+  datasource:
+    url: jdbc:h2:mem:testdb;MODE=MySQL
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+
+# 3. prod의 info 메시지에 있는 변수도 채워줍니다.
+info:
+  app:
+    message: "test app"
