@@ -1,0 +1,32 @@
+spring:
+    application:
+        name: member-management
+
+    servlet:
+      multipart:
+          max-file-size: 10MB
+
+    cloud:
+        aws:
+            region:
+                static: ap-northeast-2
+
+
+management:
+    endpoints:
+        web:
+            exposure:
+                include: health,info
+    info:
+        env:
+            enabled: true
+        java:
+            enabled: true
+
+    logging:
+        level:
+            root: INFO
+
+server:
+    address: 0.0.0.0
+    port: 8080

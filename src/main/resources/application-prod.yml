@@ -1,0 +1,32 @@
+spring:
+  config:
+    activate:
+      on-profile: prod
+    import: "optional:aws-parameterstore:/member-manager-app/prod/"
+
+  cloud:
+    aws:
+      s3:
+        bucket: ${S3_BUCKET}
+
+
+  datasource:
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true
+
+info:
+  app:
+    message: "${TEAM_NAME} profile management app"
+
