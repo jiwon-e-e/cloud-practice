@@ -1,4 +1,4 @@
-# schedule-upgrade
+# cloud
 
 spring 3기 권지원입니다. cloud 주차 과제 제출합니다!
 
