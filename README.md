@@ -40,28 +40,32 @@ https://kjw81024.tistory.com/70
 
 ## :pouting_cat: 3. 과제 첨부 사진  
 
-- LV0
+- LV0  
    설정 완료된 AWS Budgets 화면
 
-- LV1
-   EC2의 퍼블릭 IP
+- LV1  
+   EC2의 퍼블릭 IP  
    ` 3.35.131.115 `
 
-- LV2
+- LV2  
    Actuator Info endpoint URL 
 
    RDS 보안 그룹 스크린샷
 
-- LV3
+- LV3  
   발급받은 Presigned URL 1개와 만료시간
 
 
-- LV4
+- LV4  
   Github Actions 이미지
 
-- LV6
-  CloudFront 이미지 URL
-  `  `
+  
+  
+
+- LV6  
+  CloudFront 이미지 URL  
+  ` https://d1200cx4g3w3mh.cloudfront.net/uploads/0ea3d861-58fc-4f01-b433-2486ca745ae5_%EC%8A%A4%ED%81%AC%EB%A6%B0%EC%83%B7%202026-03-01%20211513.png `
+
 
 -----
 
